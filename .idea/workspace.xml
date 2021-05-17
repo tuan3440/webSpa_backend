@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ce84ed0-d1e8-4e6f-8d7e-ffad07409f9d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/bill.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/bill.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/cart.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/cart.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/mailer.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/mailer.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/order.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/order.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/product.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/product.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/service.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/service.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/bill.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/bill.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/order.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/order.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/02e2ecd1fc348e2eec716d4d33817641" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/050ace2284be13a0c4bc29e7c1c81887" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/4dd3338a24c67a4ce30f9da7ccbdf0da" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/595a9e4dd22531a3040ebcd8a24fd9e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/975a6c3d486e53ace93de76c013581a0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/a8e19d8339bde0987095d1ffd7094a42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/af0a201d4092a4752dafe128a8e8705e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/cd97ce9517698a0fcb8fa45063216443" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/order.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/order.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/product.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/product.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/service.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/service.route.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1rIdxcXSCo2QTfgdawvTl42rBXZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project3-spa-frontend" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ce84ed0-d1e8-4e6f-8d7e-ffad07409f9d" name="Default Changelist" comment="" />
+      <created>1618667785796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618667785796</updated>
+      <workItem from="1618667787057" duration="8347000" />
+      <workItem from="1618820940707" duration="2009000" />
+      <workItem from="1618887237928" duration="2428000" />
+      <workItem from="1618934529692" duration="3709000" />
+      <workItem from="1618966277582" duration="4370000" />
+      <workItem from="1619100342001" duration="4717000" />
+      <workItem from="1619276586702" duration="1898000" />
+      <workItem from="1619538356438" duration="842000" />
+      <workItem from="1619539378813" duration="51000" />
+      <workItem from="1619633221607" duration="2000" />
+      <workItem from="1620058974841" duration="1924000" />
+      <workItem from="1620149581069" duration="1900000" />
+      <workItem from="1620272125485" duration="614000" />
+      <workItem from="1620756598707" duration="641000" />
+      <workItem from="1620831938783" duration="744000" />
+      <workItem from="1620961881972" duration="1561000" />
+      <workItem from="1620963832595" duration="93000" />
+      <workItem from="1620963933288" duration="2617000" />
+      <workItem from="1620974521638" duration="3418000" />
+      <workItem from="1621013771566" duration="3121000" />
+      <workItem from="1621049724265" duration="4230000" />
+      <workItem from="1621070644047" duration="3910000" />
+      <workItem from="1621096790480" duration="3075000" />
+      <workItem from="1621158788183" duration="636000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

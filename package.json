@@ -1,0 +1,38 @@
+{
+  "name": "backend_spa_web_thuc_tap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/manh1451999/backend_spa_web_thuc_tap.git"
+  },
+  "author": "MANH TRI HUY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/manh1451999/backend_spa_web_thuc_tap/issues"
+  },
+  "homepage": "https://gitlab.com/manh1451999/backend_spa_web_thuc_tap#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.18",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.0",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
