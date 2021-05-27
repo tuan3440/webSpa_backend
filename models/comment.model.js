@@ -6,21 +6,14 @@ var commentSchema = new Schema({
 		type: Schema.Types.ObjectId,
 		ref: 'users'
 	},
-	product: {
+	service: {
 		type: Schema.Types.ObjectId,
-		ref: 'products'
-	},
-	rate: {
-		type: Number,
-		max: 5,
-		min: 0,
-		default: null
+		ref: 'services'
 	},
 	content: {
 		type: String,
 		trim: true
 	},
-
 	createAt: {
 		type: Date,
 		default: Date.now

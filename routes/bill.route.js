@@ -22,4 +22,8 @@ router.post('/checkSlot',
   controller.checkSlot
 );
 
+router.get('/stastic', controller.stasticBill);
+
+router.get('/stasticCount', controller.stasticBillCount);
+
 module.exports = router;

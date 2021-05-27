@@ -34,6 +34,7 @@ const upload = multer({
 
 router.get('/',controller.index)
 
+router.get('/:id',controller.viewDetail)
 
 router.post('/serviceCreate',
   upload.single('img'),
@@ -48,7 +49,6 @@ router.put('/updateService/:id',
 router.delete('/deleteService/:id',
   controller.deleteService
 );
-router.get('/stastic', controller.stasticService)
-router.get('/stasticCount', controller.stasticServiceCount)
+
 
 module.exports = router;

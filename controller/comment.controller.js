@@ -4,12 +4,14 @@ const jwtMethod = require('../jsonwebtoken/jwt.method');
 
 const secretKey = process.env.ACCESS_TOKEN_SECRET || "Manh.1451999";
 let controller = {}
-controller.newComment = async (req, res) => {  
+controller.newComment = async (req, res) => {
+    console.log(req.user.id);
     let userId = await userModel.findById(req.user.id)
+    console.log(userId);
     let newCmt = await commentModel.create({
         user: userId._id,
-        rate: req.body.rate,
-        content: req.body.content
+        content: req.body.content,
+        service : req.body.serviceId
     })
     let allComments = await commentModel.find().populate('user', 'firstName lastName').exec()
     res.json(allComments)

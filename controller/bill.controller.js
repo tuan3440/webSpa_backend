@@ -1,6 +1,7 @@
 var billModel = require('../models/bill.model');
 let userModel = require('../models/user.model');
 let sendMail = require('../controller/mailer.controller');
+var serviceModel = require('../models/service.model')
 let controller = {}
 const fs = require('fs')
 module.exports = controller
@@ -129,6 +130,96 @@ controller.checkSlot = async (req, res) => {
 
 	catch (err) {
 		// console.log(err)
+		res.status(500).json({ error: err })
+	}
+}
+
+controller.stasticBill = async (req, res) => {
+	try {
+		let data = [];
+		for(let i = 1; i<=12 ; i++) {
+			data.push({
+				month : i,
+				total : 0
+			})
+		}
+		let bills = await billModel.find({status : 3}).select('bookDate totalMoney');
+        if (bills.length > 0) {
+        	await bills.map((bill, index) => {
+        		let month = bill.bookDate.getMonth() + 1;
+        		data[month].total += bill.totalMoney;
+			})
+			// let monthStart = bills[0].bookDate.getMonth();
+			// let i = 0;
+			// // console.log(monthStart);
+			// // data[i] = orders[0];
+			// data[i] = {
+			// 	month : bills[0].bookDate.getMonth() + 1,
+			// 	total : bills[0].totalMoney
+			// }
+			// await bills.map((bill, index) => {
+			// 	if (index !== 0 ) {
+			// 		if (bills[index].bookDate.getMonth() == monthStart) {
+			// 			data[i].total += bill.totalMoney;
+			// 		} else {
+			// 			monthStart ++;
+			// 			i++;
+			// 			data[i] = {
+			// 				month : bill.bookDate.getMonth() + 1,
+			// 				total : bill.totalMoney
+			// 			}
+			// 		}
+			// 	}
+			// })
+		}
+        console.log(data)
+		res.json(data);
+	}
+	catch (err) {
+		console.log(err)
+		res.status(500).json({ error: err })
+	}
+}
+
+controller.stasticBillCount = async (req, res) => {
+	try{
+		let bills = await billModel.find({status:3});
+		let data = [];
+		let serviceId = [];
+		serviceId.push(bills[0].service.toString())
+		data[bills[0].service.toString()] = 1;
+
+		await bills.map((bill, index) => {
+			if (index !== 0) {
+				if (serviceId.includes(bill.service.toString())) {
+					console.log('x')
+					data[bill.service] += 1;
+				} else {
+					serviceId.push(bill.service.toString());
+					data[bill.service.toString()] = 1;
+				}
+			}
+		})
+
+		let idServiecMax = 0;
+		let max = 0;
+		for (var key in data) {
+			if (data[key] > max) {
+				max = data[key];
+				idServiecMax = key;
+			}
+		}
+
+		console.log(idServiecMax);
+		let t = await serviceModel.findById(idServiecMax);
+		let result = [
+			t, max
+		]
+        console.log(result)
+		res.json(result);
+	}
+	catch (err) {
+		console.log(err)
 		res.status(500).json({ error: err })
 	}
 }

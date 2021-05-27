@@ -79,28 +79,19 @@ controller.stasticOrder = async (req, res) => {
     try {
         let orders = await orderModel.find({status : 2}).select('createAt totalMoney');
         let data = [];
-        let monthStart = orders[0].createAt.getMonth();
-        let i = 0;
-        // console.log(monthStart);
-        // data[i] = orders[0];
-        data[i] = {
-            month : orders[0].createAt.getMonth() + 1,
-            total : orders[0].totalMoney
+        for(let i = 1; i<=12 ; i++) {
+            data.push({
+                month : i,
+                total : 0
+            })
         }
-        await orders.map((order, index) => {
-            if (index !== 0 ) {
-                if (orders[index].createAt.getMonth() == monthStart) {
-                    data[i].total += order.totalMoney;
-                } else {
-                    monthStart ++;
-                    i++;
-                    data[i] = {
-                        month : order.createAt.getMonth() + 1,
-                        total : order.totalMoney
-                    }
-                }
-            }
-        })
+        if (orders.length > 0) {
+            await orders.map((order, index) => {
+                let month = order.createAt.getMonth() + 1;
+                data[month].total += order.totalMoney;
+            })
+        }
+
 
         res.json(data);
     }
