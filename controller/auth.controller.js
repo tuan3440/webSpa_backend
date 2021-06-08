@@ -59,13 +59,13 @@ controller.login = async (req, res) => {
 
 
                     res.cookie('access_token', accessToken, {
-                        maxAge: 60 * 24 * 60 * 60,
+                        maxAge: 7*3600*1000,
                         httpOnly: true,
                         //secure: true;
                     })
 
                     res.cookie('refresh_token', accessToken, {
-                        maxAge: 60 * 24 * 60 * 60,
+                        maxAge: 7*60*3600*1000,
                         httpOnly: true,
                         //secure: true;
                     })

@@ -3,13 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="0ce84ed0-d1e8-4e6f-8d7e-ffad07409f9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/auth.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/bill.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/bill.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/comment.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/comment.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/order.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/order.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/feedback.controller.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/service.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/service.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/comment.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/comment.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/bill.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/bill.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/service.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/service.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/feedback.model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/feedback.route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/order.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/order.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.route.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Superkul/staco2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project3-spa-frontend" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -87,6 +90,19 @@
       <workItem from="1621952121023" duration="1450000" />
       <workItem from="1622043687633" duration="3491000" />
       <workItem from="1622085166461" duration="4325000" />
+      <workItem from="1622112766036" duration="714000" />
+      <workItem from="1622128747031" duration="635000" />
+      <workItem from="1622168731078" duration="3273000" />
+      <workItem from="1622277820292" duration="17000" />
+      <workItem from="1622386970783" duration="1932000" />
+      <workItem from="1622426326041" duration="35000" />
+      <workItem from="1622467255963" duration="4929000" />
+      <workItem from="1622476091112" duration="615000" />
+      <workItem from="1622650121329" duration="626000" />
+      <workItem from="1622653989238" duration="15000" />
+      <workItem from="1622684633947" duration="2643000" />
+      <workItem from="1622741471950" duration="321000" />
+      <workItem from="1623162502438" duration="1713000" />
     </task>
     <servers />
   </component>

@@ -44,13 +44,13 @@ controller.newBill = async (req, res) => {
                 code : code
 			});
 			let checkUser = await userModel.findOne({ _id: req.user.id })
-			data = "<h1>Hệ thống quản lí Spa Tuandz</h1>" +
+			data = "<h1>Hệ thống quản lí Spa Green</h1>" +
 				"<div>Cảm ơn bạn Tuấn đã tin tưởng và đặt lịch spa tại cửa hàng của chúng tôi</div>" +
 				"<div>Để đặt lịch thành công vui lòng bạn chuyển tiền đặt cọc cho chúng tôi</div>" +
 				"<div>Số tài khoản : 030099003692</div>" +
 				"<div>Ngân hàng : MSB</div>" +
 				"<div>Nội dung chuyển khoản ghi mã code : " + code +"</div>" +
-				"<div>Số tiền : 500.000 vnđ</div>" +
+				"<div>Số tiền : "+req.body.totalMoney/2+"vnđ</div>" +
 				"<div>Cảm ơn và chúng tôi chờ bạn đến để phục vụ</div>";
 			console.log(data)
 			await sendMail(checkUser.email, "Thanh toán tiền đặt lịch", data);
@@ -149,28 +149,7 @@ controller.stasticBill = async (req, res) => {
         		let month = bill.bookDate.getMonth() + 1;
         		data[month].total += bill.totalMoney;
 			})
-			// let monthStart = bills[0].bookDate.getMonth();
-			// let i = 0;
-			// // console.log(monthStart);
-			// // data[i] = orders[0];
-			// data[i] = {
-			// 	month : bills[0].bookDate.getMonth() + 1,
-			// 	total : bills[0].totalMoney
-			// }
-			// await bills.map((bill, index) => {
-			// 	if (index !== 0 ) {
-			// 		if (bills[index].bookDate.getMonth() == monthStart) {
-			// 			data[i].total += bill.totalMoney;
-			// 		} else {
-			// 			monthStart ++;
-			// 			i++;
-			// 			data[i] = {
-			// 				month : bill.bookDate.getMonth() + 1,
-			// 				total : bill.totalMoney
-			// 			}
-			// 		}
-			// 	}
-			// })
+
 		}
         console.log(data)
 		res.json(data);

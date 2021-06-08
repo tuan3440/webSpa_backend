@@ -15,5 +15,6 @@ router.patch('/:id', userController.updateUserAdmin)
 router.post('/lock/:id', userController.LockUser)
 router.post('/unlock/:id', userController.unLockUser)
 router.post('/changepass', userController.changePass)
+router.get('/stastic', userController.stastic)
 
 module.exports = router;

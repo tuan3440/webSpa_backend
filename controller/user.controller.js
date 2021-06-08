@@ -172,4 +172,15 @@ controller.changePass = async(req, res) => {
     }
 }
 
+controller.stastic = async (req, res) => {
+    try {
+        let user = await userModel.find({}).sort({point: -1}).limit(2);
+        res.json(user);
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).json({ error: err })
+    }
+}
+
 module.exports = controller
